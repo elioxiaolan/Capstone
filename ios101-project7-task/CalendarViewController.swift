@@ -240,11 +240,11 @@ extension CalendarViewController: UITableViewDataSource {
 
     // The number of rows to show based on the number of selected tasks (i.e. tasks associated with the current selected date)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return selectedTasks.count
+        return selectedTasks.count + 1;
     }
     
     func newTableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return selectedTasks.count
+        return selectedTasks.count + 1;
     }
 
     // Create and configure a cell for each row of the table view (i.e. each task in the selectedTasks array)
